@@ -23,10 +23,9 @@ def objectDetected():
 def objectOutOfRange():
     print('okay now')
 
-while True:
+def detectChange():
     current = io.input(sensor)
     if current != previous:
-        changeDetected(current)
-    previous = current
-    time.sleep(0.1)
-io.cleanup()
+        return current
+    else:
+        return False
