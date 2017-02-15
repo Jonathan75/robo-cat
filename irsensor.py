@@ -25,7 +25,6 @@ def objectOutOfRange():
 
 def detectChange():
     current = io.input(sensor)
-    print(current)
     if current != previous:
         return current
     else:
